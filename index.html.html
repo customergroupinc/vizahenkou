@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留学ビザから特定技能へ：グラフなしシンプルガイド</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .flowchart-arrow {
+            position: relative;
+            width: 100%;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flowchart-arrow::after {
+            content: '▼';
+            font-size: 1.8rem;
+            color: #006494;
+        }
+        .flowchart-arrow-horizontal {
+            position: relative;
+            width: 3rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flowchart-arrow-horizontal::after {
+            content: '►';
+            font-size: 1.8rem;
+            color: #006494;
+        }
+        .flowchart-card {
+            border: 2px solid #0582CA;
+            background-color: #ffffff;
+            color: #051923;
+        }
+        .flowchart-card-critical {
+            border: 2px solid #e53e3e;
+            background-color: #fff5f5;
+        }
+    </style>
+</head>
+<body class="bg-[#051923] text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-6">
+
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-1">留学ビザから特定技能ビザへ</h1>
+            <!-- Removed "申請のポイントをコンパクトに解説" -->
+        </header>
+
+        <main class="space-y-8">
+
+            <section class="bg-white rounded-xl shadow-2xl p-4 md:p-6 transform hover:scale-105 transition-transform duration-300">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                    <div>
+                        <h2 class="text-2xl font-bold text-[#003554] mb-3">重要：申請は早めに！</h2>
+                        <p class="text-base mb-3">毎年3〜4月は申請が集中し、審査に時間がかかります。準備ができたらすぐに申請しましょう。</p>
+                        <div class="flex items-center bg-[#e0f7fa] p-3 rounded-lg">
+                            <span class="text-4xl mr-3">💡</span>
+                            <p class="font-bold text-[#006494] text-sm">早めの準備と申請がスムーズな移行の鍵です。</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold text-center mb-2 text-[#003554]">申請が特に集中する時期</h3>
+                        <div class="bg-[#00A6FB] text-white p-4 rounded-lg shadow-md">
+                            <p class="text-3xl font-bold">3月 & 4月</p>
+                            <p class="text-sm mt-1">（卒業・就職シーズン）</p>
+                        </div>
+                        <p class="text-xs text-gray-600 mt-2">この時期は通常より審査に時間がかかる傾向があります。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-[#003554] rounded-xl shadow-2xl p-4 md:p-6">
+                <h2 class="text-2xl font-bold text-white text-center mb-6">ビザ変更に大切な４つの支払い証明</h2>
+                <p class="text-center text-gray-200 mb-6 max-w-3xl mx-auto text-sm">特定技能ビザ変更には、税金や保険料の支払い証明が必須です。未払いがあると審査が大幅に遅れます。</p>
+                <div class="space-y-3 text-white">
+                    <div class="flex items-start bg-[#004e7a] p-3 rounded-lg shadow-md">
+                        <span class="text-xl text-[#00A6FB] mr-2 mt-1">✅</span>
+                        <div>
+                            <h4 class="font-bold text-lg">国税</h4>
+                            <p class="text-sm">所得税など。複数バイトの場合、確定申告と納税証明書が必要です。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-[#004e7a] p-3 rounded-lg shadow-md">
+                        <span class="text-xl text-[#00A6FB] mr-2 mt-1">✅</span>
+                        <div>
+                            <h4 class="font-bold text-lg">地方税</h4>
+                            <p class="text-sm">住民税など。市役所・区役所で証明書をもらいましょう。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-[#004e7a] p-3 rounded-lg shadow-md">
+                        <span class="text-xl text-[#00A6FB] mr-2 mt-1">✅</span>
+                        <div>
+                            <h4 class="font-bold text-lg">国民健康保険（税）</h4>
+                            <p class="text-sm">保険料の支払い証明書。未納がないか確認。</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start bg-[#004e7a] p-3 rounded-lg shadow-md">
+                       <span class="text-xl text-[#00A6FB] mr-2 mt-1">✅</span>
+                        <div>
+                            <h4 class="font-bold text-lg">国民年金の保険料</h4>
+                            <p class="text-sm">年金事務所で支払い証明書。特例を受けている場合も証明が必要です。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-xl shadow-2xl p-4 md:p-6">
+                <h2 class="text-2xl font-bold text-[#003554] text-center mb-6">申請の流れを分かりやすく</h2>
+                <p class="text-center text-gray-600 mb-6 max-w-3xl mx-auto text-sm">準備から許可までの流れです。「税金や保険の確認」が特に重要！</p>
+                
+                <div class="flex flex-col items-center space-y-3">
+                    <div class="flowchart-card rounded-lg p-3 w-full md:w-2/3 text-center shadow-lg">
+                        <h4 class="font-bold text-base">ステップ1：準備と相談</h4>
+                        <p class="text-xs">書類準備、不明点は「留学生就職支援窓口」で相談・チェック。</p>
+                    </div>
+                    <div class="flowchart-arrow"></div>
+                    <div class="flowchart-card rounded-lg p-3 w-full md:w-2/3 text-center shadow-lg">
+                        <h4 class="font-bold text-base">ステップ2：税金・保険の確認</h4>
+                        <p class="text-xs">国税、地方税、国民健康保険、国民年金がすべて支払われているか確認。</p>
+                    </div>
+                    <div class="flowchart-arrow"></div>
+
+                    <div class="w-full">
+                        <div class="flex flex-col md:flex-row justify-center items-stretch gap-3">
+                            <div class="flex-1 flex flex-col items-center p-3 bg-green-50 rounded-lg border-2 border-green-500">
+                                <h4 class="font-bold text-lg text-green-700 mb-3">全部払った？ (はい)</h4>
+                                <div class="flowchart-card rounded-lg p-3 w-full text-center shadow-md mb-3 flex-grow">
+                                    <h5 class="font-bold text-sm">ステップ3a：申請する</h5>
+                                    <p class="text-xs">書類を揃え、入管に申請。</p>
+                                </div>
+                                <div class="flowchart-arrow"></div>
+                                <div class="flowchart-card rounded-lg p-3 w-full text-center shadow-md flex-grow">
+                                    <h5 class="font-bold text-sm">ステップ4a：審査・許可</h5>
+                                    <p class="text-xs">問題なければ「特定技能1号」許可。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-1 flex flex-col items-center p-3 bg-red-50 rounded-lg border-2 border-red-500">
+                                <h4 class="font-bold text-lg text-red-700 mb-3">未払いがある？ (いいえ)</h4>
+                                <div class="flowchart-card-critical rounded-lg p-3 w-full text-center shadow-md mb-3 flex-grow">
+                                    <h5 class="font-bold text-sm text-red-700">ステップ3b：指導を受ける</h5>
+                                    <p class="text-xs">未払い発覚。入管から指導。</p>
+                                </div>
+                                <div class="flowchart-arrow"></div>
+                                <div class="flowchart-card-critical rounded-lg p-3 w-full text-center shadow-md flex-grow">
+                                    <h5 class="font-bold text-sm text-red-700">ステップ4b：審査が長くなる！</h5>
+                                    <p class="font-bold text-xs text-red-700">審査が止まり、大幅に遅れます！</p>
+                                    <p class="text-xs">完納後に審査再開。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-[#006494] rounded-xl shadow-2xl p-4 md:p-6">
+                <h2 class="text-2xl font-bold text-white text-center mb-6">ご家族のビザはどうなる？</h2>
+                <p class="text-center text-gray-200 mb-6 max-w-3xl mx-auto text-sm">ご家族が「家族滞在」で日本に在留している場合、外国人財の方が特定技能1号になると、ご家族のビザも変更が必要です。</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg text-[#003554] mb-2">変更前</h4>
+                        <p class="text-base">外国人財のビザ</p>
+                        <p class="font-bold text-xl text-[#0582CA] mb-3">留学</p>
+                        <p class="text-base">ご家族のビザ</p>
+                        <p class="font-bold text-xl text-[#0582CA]">家族滞在</p>
+                    </div>
+                    <div class="flex justify-center">
+                         <span class="text-5xl text-white font-bold transform rotate-90 md:rotate-0">➔</span>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <h4 class="font-bold text-lg text-[#003554] mb-2">変更後</h4>
+                        <p class="text-base">外国人財のビザ</p>
+                        <p class="font-bold text-xl text-[#00A6FB] mb-3">特定技能1号</p>
+                        <p class="text-base">ご家族のビザ</p>
+                        <p class="font-bold text-xl text-[#00A6FB]">特定活動</p>
+                    </div>
+                </div>
+                <div class="bg-red-100 text-red-800 p-3 rounded-lg mt-6 text-sm font-bold text-center">
+                    ⚠️ 注意：家族滞在ビザの対象は、留学生の「配偶者」と「子ども」のみです。両親や兄弟姉妹は対象外なのでご注意ください。
+                </div>
+                 <p class="text-center text-white mt-6 bg-black bg-opacity-20 p-3 rounded-lg text-sm">ご家族の「特定活動」ビザへの変更申請は、住んでいる場所の入管に必ず事前に聞いてみましょう。</p>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-8 text-gray-400 text-xs">
+            <p>このインフォグラフィックは、公表情報に基づいています。</p>
+            <p>申請時は、必ず出入国在留管理庁の最新情報をご確認ください。</p>
+        </footer>
+    </div>
+</body>
+</html>
